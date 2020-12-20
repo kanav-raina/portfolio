@@ -57,6 +57,7 @@
     width:50%;
     height:90vh;
     justify-content: center;
+    background:radial-gradient(purple,hotpink);
     
 }
 .right-side img{
@@ -89,7 +90,7 @@
 .projects{
     display:grid;
     width:90%;
-    margin:10px auto;
+    margin:1rem auto;
     grid-template-rows: repeat(2,18rem);
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
     grid-gap:1rem;
@@ -97,4 +98,51 @@
 
 .card{
     border:1px solid yellowgreen;
+}
+
+.skills{
+    width:90%;
+    margin:1rem auto;
+    height:40vh;
+    border:2px solid yellowgreen;
+}
+.contact{
+    width:90%;
+    margin:1rem auto;
+    height:70vh;
+    border:2px solid yellowgreen;
+    display:flex;
+    flex-direction: row;
+}
+
+.contact-form{
+    width:50%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+
+}
+
+.input-item{
+    margin-top:2rem;
+}
+
+.social-network{
+    border:2px solid black;
+    width:50%;
+    height: auto;
+}
+
+.callnmail{
+    display: flex;
+    flex-direction: row;
+    margin:2rem;
+}
+
+.social-network-logo{
+    border:1px solid black;
+    display:flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
 }

@@ -6,12 +6,12 @@ const Projects = () => {
             <div className='heading'>
                 <h1>Projects</h1>
                 <div className='projects'>
-                    <div className='card'></div>
-                    <div className='card'></div>
-                    <div className='card'></div>
-                    <div className='card'></div>
-                    <div className='card'></div>
-                    <div className='card'></div>
+                    <div className='card'>ProjectProject</div>
+                    <div className='card'>Project</div>
+                    <div className='card'>Project</div>
+                    <div className='card'>Project</div>
+                    <div className='card'>Project</div>
+                    <div className='card'>Project</div>
                 </div>
             </div>
         </div>
