@@ -1,6 +1,6 @@
 import React from 'react'
-import './style.css'
-import logo from './images/logo.gif';
+import '../style.css'
+import logo from '../images/logo.gif';
 const Navbar = () => {
     return (
         <div>

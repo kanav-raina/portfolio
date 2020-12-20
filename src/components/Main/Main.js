@@ -1,6 +1,6 @@
 import FrontPage from './FrontPage'
 import Navbar from './Navbar'
-import './style.css'
+import '../style.css'
 function Main() {
     return (
       <div className="main" data-aos="fade-in">
@@ -10,5 +10,8 @@ function Main() {
     );
   }
   
-  export default Main;
+export default Main;
   
+
+
+
