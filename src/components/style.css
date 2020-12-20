@@ -86,3 +86,15 @@
     border:2px solid black
 }
 
+.projects{
+    display:grid;
+    width:90%;
+    margin:10px auto;
+    grid-template-rows: repeat(2,18rem);
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap:1rem;
+}
+
+.card{
+    border:1px solid yellowgreen;
+}
