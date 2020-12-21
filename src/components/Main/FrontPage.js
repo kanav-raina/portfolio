@@ -1,14 +1,15 @@
+import { Button } from '@material-ui/core'
 import React from 'react'
 
 const FrontPage = () => {
     return (
         <div>
-            <div className='front-page'>
+            <div className='front-page' data-aos="fade-in">
                 <div className='left-side'>
                         <div className='content'>
                                 Hello there<br />
                                 I'm KANAV RAINA<br />
-                                <button>Get in Touch</button>
+                                <Button color='primary' variant='contained'>Get in Touch</Button>
                         </div>
                 </div>
                 <div className='right-side'>

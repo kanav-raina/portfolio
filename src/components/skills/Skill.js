@@ -1,29 +1,66 @@
-import React from 'react'
-import '../style.css'
+import React from 'react';
+import '../style.css';
+import LinearWithValueLabel from './Progress';
+
 const Skill = () => {
-    return (//fix this margin error skill is overlapping on grid if margin is not set
-        <div style={{marginTop:'40rem'}}>    
+    return (
+        <div>    
             <div className='heading'>
                 <h1>Skills</h1>
             </div>
-            <div className='skills'>
-                <div>JavaScript : 75%</div>
-                <div>Python :70%</div>
-                <div>ReactJS :80%</div>
-                <div>HTML and CSS :70%</div>
-                <div>Node:65%</div>
-                <div>IOT and Raspberrypi :80%</div>
-                <div>Linux Shell Scripting :55%</div>
-                <div>GraphQl and Mongodb :</div>
+            <div className='skills' data-aos="fade-up">
+                    <div className='progress' >
+                        <div className='skill'>
+                            JavaScript :
+                        </div>  
+                        <LinearWithValueLabel value={75}  />
+                    </div>
+                    <div className='progress'>
+                        <div className='skill'>
+                            Python :
+                        </div>  
+                        <LinearWithValueLabel value={70}  />
+                    </div>
+                    <div className='progress'>
+                    <div className='skill'>
+                        ReactJS :
+                     </div> 
+                        <LinearWithValueLabel value={90}  />
+                    </div>
+                    <div className='progress'>
+                        <div className='skill'>
+                            HTML and CSS :
+                        </div> 
+                        <LinearWithValueLabel value={75}  />
+                    </div>
+                    <div className='progress'>
+                        <div className='skill'>
+                            Node :
+                        </div> 
+                        <LinearWithValueLabel value={75}  />
+                    </div>
+                    <div className='progress'>
+                        <div className='skill'>
+                            IOT and Raspberrypi :
+                        </div> 
+                        <LinearWithValueLabel value={80}  />
+                    </div>
+                    <div className='progress'>
+                        <div className='skill'>
+                            Linux Shell Scripting :
+                        </div> 
+                        <LinearWithValueLabel value={75}  />
+                    </div>
+                    <div className='progress'>
+                        <div className='skill'>
+                            GraphQl and Mongodb 
+                        </div> 
+                        <LinearWithValueLabel value={75}  />
+                    </div>
+
             </div>
         </div>
     )
 }
-
-
-
-
-
-
 
 export default Skill

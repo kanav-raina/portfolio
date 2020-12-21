@@ -2,36 +2,40 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 .main{
     width:100%;
     height: 100vh;
-    background:linear-gradient(240deg,pink,purple);
+    background:linear-gradient(240deg,#12c2e9,#c471ed,#f64f59);
 }
 
 .navBar{
     width:100%;
     height:10vh;
-    border:1px solid brown;
+    /*border:1px solid brown;*/
     display: flex;
     justify-content: space-between;
     top:0;
 }
 
 .logo{
-    border:5px solid yellow;
+    /*border:1px solid brown;*/
     margin-left: 2rem;
     margin-top: 1rem;
+    background:radial-gradient(rgb(217, 226, 216)),rgb(2, 11, 16));
 }
 .menu ul{
     margin-right: 2rem;
-    
+    color:rgb(236, 235, 230);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .menu ul li{
-    border:5px solid yellow;
+    /*border:1px solid brown;*/
     list-style: none;
-    display: inline-block;
     padding:1rem;
 }
 
@@ -41,27 +45,28 @@
 }
 
 .left-side{
-    border:3px solid yellow;
+    /*border:1px solid brown;*/
     width:50%;
     height:90vh;
 }
 
 .left-side .content{
-    border:1px solid yellow;
+    /*border:1px solid brown;*/
     margin-left:2rem;
     margin-top: 20rem;
     font-size: 2.5rem;
+    color:rgb(236, 235, 230);
 }
 .right-side{
-    border:3px solid yellow;
+    /*border:1px solid brown;*/
     width:50%;
     height:90vh;
     justify-content: center;
-    background:radial-gradient(purple,hotpink);
+    
     
 }
 .right-side img{
-    border:1px solid black;
+    /*border:1px solid brown;*/
     margin:5rem;
 }
 .heading{
@@ -69,6 +74,7 @@
     height: 15vh;
     text-align: center;
     margin-top: 10vh;
+
 }
 .about{
     display: flex;
@@ -78,39 +84,75 @@
 .left{
     height:75vh;
     width:50%;
-    border:2px solid black
+    /*border:1px solid brown;*/
+    background:linear-gradient(60deg,rgb(241, 80, 103), white 70%);
 }
 
 .right{
     height:75vh;
     width:50%;
-    border:2px solid black
+    /*border:1px solid brown;*/
+    background:linear-gradient(240deg, #12c2e9, white 50%);
+}
+.right p{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding:0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: large;
+    text-indent: 1rem;
+    color:rgb(15, 16, 17);
 }
 
-.projects{
-    display:grid;
+.project-page{
+    margin:3rem  ;
     width:90%;
-    margin:1rem auto;
-    grid-template-rows: repeat(2,18rem);
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    grid-gap:1rem;
+    height:100vh;
+    border:1px solid black;
+}
+.projects{
+    display:flex;
+    
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 
 .card{
-    border:1px solid yellowgreen;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card :hover{
+    background-color: rgb(29, 161, 242);
 }
 
 .skills{
     width:90%;
-    margin:1rem auto;
-    height:40vh;
-    border:2px solid yellowgreen;
+    margin:4rem ;
+    height:50vh;
+    /*border:2px solid yellowgreen;*/
+}
+.skills .progress{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+.progress .skill{
+    margin-right: 5rem;
+    width: 10rem;
 }
 .contact{
     width:90%;
-    margin:1rem auto;
+    margin:4rem ;
     height:70vh;
-    border:2px solid yellowgreen;
+    /*border:2px solid yellowgreen;*/
     display:flex;
     flex-direction: row;
 }
@@ -118,17 +160,16 @@
 .contact-form{
     width:50%;
     margin-left: 2rem;
-    margin-top: 1rem;
     margin-right: 2rem;
 
 }
 
 .input-item{
-    margin-top:2rem;
+    margin-bottom:2rem;
 }
 
 .social-network{
-    border:2px solid black;
+    /*border:2px solid black;*/
     width:50%;
     height: auto;
 }
@@ -136,13 +177,174 @@
 .callnmail{
     display: flex;
     flex-direction: row;
-    margin:2rem;
+    margin-bottom: 3rem;
+    margin-left: 135px;
 }
 
 .social-network-logo{
-    border:1px solid black;
+    /*border:1px solid black;*/
     display:flex;
     flex-direction: row;
     padding: 2rem;
     justify-content: center;
 }
+
+
+#fb{
+    color:rgb(0, 122, 236)
+}
+
+#in{
+    color:rgb(208, 81, 148)
+}
+#ghub{
+    color:rgb(49, 47, 47)
+}
+
+#twitter{
+    color:rgb(29, 161, 242);
+}
+#li{
+    color:rgb(3, 116, 177)
+}
+
+#li :hover{
+    transform: scale(1.1);
+
+}
+#fb :hover{
+    transform: scale(1.1);
+}
+
+#in :hover{
+    transform: scale(1.1);
+}
+#ghub :hover{
+    transform: scale(1.1);
+}
+
+#twitter :hover{
+    transform: scale(1.1);
+}
+
+#li{
+    transform: scale(1.1);
+}
+
+#name{
+    font-size: 1.5rem;
+    font-weight: 1000;
+}
+.footer{
+    margin-top: 1rem;
+}
+@media(max-width: 768px) {
+
+    .heading{
+        display: none;
+    }
+    .logo img{
+        /*border:5px solid orange;*/
+        height:40px;
+        width: 180px;
+        background:radial-gradient(rgb(217, 226, 216)),rgb(2, 11, 16));
+    }
+    .menu ul{
+        display: flexbox;
+        margin-left: 2rem;
+    }
+    .menu ul li{
+        width:65px;
+        height:50px;
+       
+    }
+
+    .navBar{
+        width:100%;
+        height:20vh;
+        /*border:1px solid brown;*/
+        display: block;
+        justify-content: space-evenly;
+        top:0;
+    }
+    .front-page{
+        display: block;
+        background-image: url('https://avatars3.githubusercontent.com/u/29794748');
+    
+    }
+    .left-side{
+        border:3px solid orange;
+        width:100%;
+        height:100vh;
+        
+    }
+    
+    .left-side .content{
+        display: none;
+    }
+    .right-side{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+    
+    .right{
+        height:100vh;
+        width:100%;
+        background:linear-gradient(240deg, #12c2e9, white 50%);
+    }
+    .right p{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding:0.5rem;
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: large;
+        text-indent: 1rem;
+        color:rgb(15, 16, 17);
+    }
+    
+/*project*/
+    .skills{
+        width:85%;
+        margin:2rem ;
+        height:60vh;
+        /*border:2px solid orange;*/
+    }
+
+    .contact{
+        margin:4rem 2rem 2rem 2rem ;
+        height:70vh;
+        /*border:2px solid yellowgreen;*/
+        display:block;
+    }
+    
+    .contact-form{
+        width:80%;
+    }
+    
+    .input-item{
+        margin-top:1rem;
+    }
+    
+    .social-network{
+        /*border:2px solid black;*/
+        margin-top: 2rem;
+        width:100%;
+        height: auto;
+    }
+    .callnmail{
+        display: flex;
+        flex-direction: row;
+        margin:2rem;
+    }
+    .inline_callnmail{
+        display: none;
+    }
+   
+    .footer{
+        margin-top: 11rem;
+    }
+  }

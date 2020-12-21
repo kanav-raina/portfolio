@@ -1,9 +1,11 @@
+//Landing Page
+
 import FrontPage from './FrontPage'
 import Navbar from './Navbar'
 import '../style.css'
 function Main() {
     return (
-      <div className="main" data-aos="fade-in">
+      <div className="main" >
         <Navbar />
         <FrontPage />
       </div>
@@ -11,7 +13,5 @@ function Main() {
   }
   
 export default Main;
-  
-
 
 
