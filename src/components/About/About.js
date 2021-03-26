@@ -4,14 +4,14 @@ import programmer from '../images/programmer.gif'
 //http://gifgifs.com/animations/jobs-people/computer-programmers/programmer_2.gif
 const About = () => {
     return (
-        <div >
+        <div id="about">
             <div className='heading'>
                 <h1>About Me</h1>
             </div>
             
             <div className='about' data-aos="fade-in">
                 <div className='left'>
-                    <img src='https://avatars3.githubusercontent.com/u/29794748' />
+                    <img className="black_image" src='https://avatars3.githubusercontent.com/u/29794748' />
                 </div>
                 <div className='right' >
                     <p>

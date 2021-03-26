@@ -1,19 +1,20 @@
 import React from 'react'
 import '../style.css';
 import Card_Item from './Card-Item';
+import {projects} from './projects'
+
 
 
 const Projects = () => {
-    const arr=[1,2,3,4,5,6]
     return (
-        <div className='project-page'>
+        <div id="projects" className='project-page' data-aos="fade-up">
             <div className='heading'>
-                <h1>Projects</h1>
+                <h1 style={{marginBottom:'3rem'}}>Projects</h1>
                 <div className='projects' data-aos="fade-in">
-                    {arr.map((a)=>{
+                    {projects.map((project)=>{
                         return(
-                            <div key={a} className='card'>
-                                <Card_Item />
+                            <div key={project.id} className='card'>
+                                <Card_Item project={project} />
                             </div>
                         )
                     })}

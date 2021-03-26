@@ -4,7 +4,7 @@ import LinearWithValueLabel from './Progress';
 
 const Skill = () => {
     return (
-        <div>    
+        <div id="skills">    
             <div className='heading'>
                 <h1>Skills</h1>
             </div>
@@ -13,7 +13,7 @@ const Skill = () => {
                         <div className='skill'>
                             JavaScript :
                         </div>  
-                        <LinearWithValueLabel value={75}  />
+                        <LinearWithValueLabel value={85}  />
                     </div>
                     <div className='progress'>
                         <div className='skill'>
@@ -35,6 +35,18 @@ const Skill = () => {
                     </div>
                     <div className='progress'>
                         <div className='skill'>
+                            Bootstrap 
+                        </div> 
+                        <LinearWithValueLabel value={75}  />
+                    </div>
+                    <div className='progress'>
+                        <div className='skill'>
+                            MaterialUI 
+                        </div> 
+                        <LinearWithValueLabel value={85}  />
+                    </div>
+                    <div className='progress'>
+                        <div className='skill'>
                             Node :
                         </div> 
                         <LinearWithValueLabel value={75}  />
@@ -53,9 +65,9 @@ const Skill = () => {
                     </div>
                     <div className='progress'>
                         <div className='skill'>
-                            GraphQl and Mongodb 
+                             Mongodb 
                         </div> 
-                        <LinearWithValueLabel value={75}  />
+                        <LinearWithValueLabel value={83}  />
                     </div>
 
             </div>

@@ -12,7 +12,7 @@ const ContactUs = () => {
     return (
         <div id='contact-us' data-aos="fade-in">
             <div className='heading'>
-                <h1>ContactUs</h1>
+                <h1 style={{marginTop:'10rem'}}>ContactUs</h1>
             </div>
             <div className='contact'>
                 <form className='contact-form' noValidate autoComplete="off">
